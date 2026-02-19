@@ -1,0 +1,20 @@
+try:
+    num = int(input("please input an integer: "))
+
+    result = 8 / num
+
+    print(result)
+
+except ValueError:
+    print("value error")
+
+except Exception as result:
+    print("unknown error: %s." % result)
+
+else:
+    print("success")
+
+finally:
+    print("perform whether succeed or not.")
+
+print("*" * 50)
